@@ -1,0 +1,48 @@
+^x^x# Error Analysis - RAG Mini Project
+
+## Test Query 1: "Was ist Multi-Factor Authentication?"
+
+### Retrieval Performance
+- **Top-1**: `password_security.md` (Distance: 1.35) ✅ **Relevant**
+- **Top-2**: `network_security.md` (Distance: 1.52) ⚠️ **Grenzwertig**
+- **Top-3**: `phishing_detection.md` (Distance: 1.64) ❌ **Nicht relevant**
+
+**Diagnose:** Top-1 ist gut, aber Top-2/3 sind Noise.
+
+### Answer Quality
+**Antwort:**
+> Multi-Factor Authentication (MFA) ist ein Sicherheitsverfahren, das zur Authentifizierung von Benutzern mehrere Nachweisfaktoren erfordert...
+
+**Bewertung:** ✅ Gut
+- Korrekte Definition
+- Konkrete Beispiele (SMS, Authenticator, Hardware)
+- Statistik korrekt zitiert (99.9%)
+- Quelle genannt
+
+**Was fehlt:**
+- Könnte ausführlicher sein
+- Mehr Kontext (Warum wichtig? Wo einsetzen?)
+
+### Root Cause Analysis
+
+**War es ein Retrieval-Problem?**
+- Teilweise. Top-1 war korrekt, aber Top-2/3 verwässern den Kontext.
+
+**War es ein Prompt-Problem?**
+- Nein. Der Prompt funktioniert gut.
+
+**War es ein Chunking-Problem?**
+- Ja! Mit 7 Chunks aus 4 Docs ist MFA wahrscheinlich mit anderen Themen vermischt.
+- **Lösung:** Kleinere Chunks (300 statt 500 Tokens)
+
+### Verbesserungsvorschläge
+
+1. **Chunk-Size reduzieren** auf 300 Tokens
+2. **Distance-Threshold** einführen (nur Chunks < 1.5)
+3. **Top-K reduzieren** auf 2 statt 3
+4. Optional: **Reranking** nach Retrieval
+
+---
+
+## Test Query 2: [Nächste Query hier dokumentieren]
+

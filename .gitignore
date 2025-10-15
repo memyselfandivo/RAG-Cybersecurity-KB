@@ -1,0 +1,16 @@
+# Environment
+venv/
+.env
+*.pyc
+__pycache__/
+
+# Generated files
+faiss_index.bin
+vector_store.pkl
+rag_output.txt
+
+# Backups
+*_backup.py
+
+# OS
+.DS_Store
