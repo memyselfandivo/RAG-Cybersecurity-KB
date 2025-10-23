@@ -1,4 +1,15 @@
-# Cybersecurity Knowledge Base - RAG System
+## 🎬 Demo
+
+### Interactive CLI Interface
+
+![System Start](screenshots/demo_start.png)
+*System-Start mit Knowledge Base-Laden*
+
+![Password Query Example](screenshots/demo_password.png)
+*Example: Password Security Query mit exzellentem Retrieval (Distance: 0.94)*
+
+![Phishing Query Example](screenshots/demo_phishing.png)
+*Example: Phishing Response Query mit strukturierter Antwort*# Cybersecurity Knowledge Base - RAG System
 
 Ein KI-gestützter Assistent für interne Cybersecurity-Dokumentation.
 
