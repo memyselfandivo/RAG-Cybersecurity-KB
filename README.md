@@ -174,8 +174,9 @@ RAG_Mini_Project/
 ├── Business_Case_RAG.md          # Business-Dokumentation
 ├── Error_Analysis.md             # Test-Ergebnisse
 ├── Prompt_Pattern_Comparison.md  # Pattern-Tests
-├── Sprint_Review.md              # Learnings & Reflexion
-└── README.md                     # Diese Datei
+├── Sprint_Review.md              # Learnings & Reflex
+├── Advanced_RAG_Learni.md    md  # Tech Deep-Dive
+├─ README.md                    ## Diese Datei
 ```
 
 ---
@@ -186,19 +187,22 @@ RAG_Mini_Project/
 - ✅ Keine Speicherung von Queries bei OpenAI
 - ✅ API-Keys sicher in `.env` (nicht in Git!)
 - ✅ Dokumente bleiben lokal
-
+- ✅ Web-Interface (Streamlit/Gradio)
 ---
 
 ## 📈 Roadmap
 
 ### Kurzfristig:
-- [ ] Web-Interface (Streamlit/Gradio)
+- [ ] Hybrid Search (Semantic + Keyword) - für Akronyme/IDs
+- [ ] Reranking (Cohere/Cross-Encoder) - verbessert Top-K
+- [ ] Query-Expansion - umschreibt Query für bessere Matches
+- [ ] Hierarchical Chunking - Sections + Subsections
+- [ ] Metadata-Filtering - Filter nach Dokument-Type/Datum
 - [ ] Mehr Dokumente hinzufügen
 - [ ] Feedback-System
 - [ ] Logging & Analytics
 
 ### Mittelfristig:
-- [ ] Hybrid Search + Reranking
 - [ ] Conversation History
 - [ ] Multi-User Support
 - [ ] Export-Funktion (PDF-Reports)
@@ -217,6 +221,7 @@ RAG_Mini_Project/
 - **Error Analysis**: [Error_Analysis.md](Error_Analysis.md)
 - **Prompt Patterns**: [Prompt_Pattern_Comparison.md](Prompt_Pattern_Comparison.md)
 - **Sprint Review**: [Sprint_Review.md](Sprint_Review.md)
+- **Advanced RAG Learnings**: [Advanced_RAG_Learnings.md](Advanced_RAG_Learnings.md) - 🔥 **Tech Deep-Dive: Chunking, Distance-Optimization, Edge Cases**
 
 ---
 
