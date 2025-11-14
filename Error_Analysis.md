@@ -44,8 +44,6 @@
 
 ---
 
-## Test Query 2: [Nächste Query hier dokumentieren]
-
 
 ## Test Query 2: "Was kann ich gegen Phishing Attacken machen?"
 
