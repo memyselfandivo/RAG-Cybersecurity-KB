@@ -420,6 +420,6 @@ Initial: Python 3.14 (Beta) → Incompatible mit vielen Packages
 
 ---
 
-**Created:** [Datum]  
-**Last Updated:** [Datum]  
+**Created:** [17.11.2025]  
+**Last Updated:** [17.11.2025]  
 **Version:** 1.0
